@@ -51,7 +51,7 @@ module.exports = ${JSON.stringify(tailwindConfig, null, 2)};
       }
     },
     
-    configureServer(server) {
+    configureServer() {
       // Generate tokens on server start
       generateTokenFiles();
     },

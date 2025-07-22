@@ -12,7 +12,7 @@ export interface TypeRampToken {
   fontSize: string;
   lineHeight: string;
   fontWeight: number;
-  fontFamily: 'text' | 'small' | 'display';
+  fontFamily: 'text' | 'small' | 'display' | 'mono';
 }
 
 export interface TypographyTokens {
@@ -20,7 +20,7 @@ export interface TypographyTokens {
     text: string;
     small: string;
     display: string;
-    mono?: string;
+    mono: string;
   };
   fontSize?: Record<string, string>;
   lineHeight?: Record<string, string>;
