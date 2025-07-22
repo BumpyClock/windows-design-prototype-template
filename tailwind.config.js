@@ -1,0 +1,102 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: ["class"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    extend: {
+      fontFamily: {
+        'text': ['var(--typography-font-family-text)'],
+        'small': ['var(--typography-font-family-small)'],
+        'display': ['var(--typography-font-family-display)'],
+      },
+      fontWeight: {
+        'regular': 'var(--typography-font-weight-regular)',
+        'semibold': 'var(--typography-font-weight-semibold)',
+      },
+      fontSize: {
+        // Windows 11 Type Ramp
+        'caption': ['var(--typography-font-size-caption)', { lineHeight: 'var(--typography-line-height-caption)' }],
+        'body': ['var(--typography-font-size-body)', { lineHeight: 'var(--typography-line-height-body)' }],
+        'body-strong': ['var(--typography-font-size-body)', { lineHeight: 'var(--typography-line-height-body-strong)' }],
+        'body-large': ['var(--typography-font-size-body-large)', { lineHeight: 'var(--typography-line-height-body-large)' }],
+        'body-large-strong': ['var(--typography-font-size-body-large)', { lineHeight: 'var(--typography-line-height-body-large-strong)' }],
+        'subtitle': ['var(--typography-font-size-subtitle)', { lineHeight: 'var(--typography-line-height-subtitle)' }],
+        'title': ['var(--typography-font-size-title)', { lineHeight: 'var(--typography-line-height-title)' }],
+        'title-large': ['var(--typography-font-size-title-large)', { lineHeight: 'var(--typography-line-height-title-large)' }],
+        'display': ['var(--typography-font-size-display)', { lineHeight: 'var(--typography-line-height-display)' }],
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      colors: {
+        // Windows 11 Design Tokens
+        'fill-accent': 'var(--colors-fill-accent-default)',
+        'fill-control': 'var(--colors-fill-control-default)',
+        'text-primary': 'var(--colors-text-primary)',
+        'text-secondary': 'var(--colors-text-secondary)',
+        'text-tertiary': 'var(--colors-text-tertiary)',
+        'text-disabled': 'var(--colors-text-disabled)',
+        'text-on-accent': 'var(--colors-text-on-accent-primary)',
+        'layer': 'var(--colors-background-layer-default)',
+        'layer-alt': 'var(--colors-background-layer-alt)',
+        'layer-card': 'var(--colors-background-layer-card)',
+        'solid': 'var(--colors-background-solid-base)',
+        'stroke-default': 'var(--colors-stroke-surface-default)',
+        'stroke-card': 'var(--colors-stroke-surface-card)',
+        'stroke-divider': 'var(--colors-stroke-divider-default)',
+      },
+      borderRadius: {
+        'none': 'var(--radii-none)',
+        'small': 'var(--radii-small)',
+        'medium': 'var(--radii-medium)',
+        'large': 'var(--radii-large)',
+        'xlarge': 'var(--radii-xlarge)',
+        'circular': 'var(--radii-circular)',
+      },
+      borderColor: {
+        'stroke-default': 'var(--colors-stroke-surface-default)',
+        'stroke-card': 'var(--colors-stroke-surface-card)',
+        'stroke-divider': 'var(--colors-stroke-divider-default)',
+      },
+      boxShadow: {
+        'elevation-low': 'var(--elevation-low-box-shadow)',
+        'elevation-medium': 'var(--elevation-medium-box-shadow)',
+        'elevation-high': 'var(--elevation-high-box-shadow)',
+        'elevation-flyout': 'var(--elevation-flyout-box-shadow)',
+        'elevation-dialog': 'var(--elevation-dialog-box-shadow)',
+        'elevation-card': 'var(--elevation-card-box-shadow)',
+        'elevation-tooltip': 'var(--elevation-tooltip-box-shadow)',
+      },
+      spacing: {
+        '0': 'var(--spacing-scale-0)',
+        '1': 'var(--spacing-scale-1)',
+        '2': 'var(--spacing-scale-2)',
+        '3': 'var(--spacing-scale-3)',
+        '4': 'var(--spacing-scale-4)',
+        '5': 'var(--spacing-scale-5)',
+        '6': 'var(--spacing-scale-6)',
+        '8': 'var(--spacing-scale-8)',
+        '10': 'var(--spacing-scale-10)',
+        '12': 'var(--spacing-scale-12)',
+        '16': 'var(--spacing-scale-16)',
+        '20': 'var(--spacing-scale-20)',
+        '24': 'var(--spacing-scale-24)',
+        '32': 'var(--spacing-scale-32)',
+        '40': 'var(--spacing-scale-40)',
+        '48': 'var(--spacing-scale-48)',
+      },
+    },
+  },
+  plugins: [require("tailwindcss-animate")],
+}

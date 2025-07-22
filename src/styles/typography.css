@@ -1,0 +1,76 @@
+/* ABOUTME: Typography utility classes for Windows 11 type ramp - provides ready-to-use classes for all text styles */
+
+/* Windows 11 Typography Classes */
+@layer utilities {
+  /* Caption - 12px, Small Regular */
+  .win-type-caption {
+    font-family: var(--font-variant-caption);
+    font-size: var(--font-size-caption);
+    line-height: var(--line-height-caption);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  /* Body - 14px, Text Regular */
+  .win-type-body {
+    font-family: var(--font-variant-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  /* Body Strong - 14px, Text Semibold */
+  .win-type-body-strong {
+    font-family: var(--font-variant-body-strong);
+    font-size: var(--font-size-body-strong);
+    line-height: var(--line-height-body-strong);
+    font-weight: var(--font-weight-body-strong);
+  }
+  
+  /* Body Large - 18px, Text Regular */
+  .win-type-body-large {
+    font-family: var(--font-variant-body-large);
+    font-size: var(--font-size-body-large);
+    line-height: var(--line-height-body-large);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  /* Body Large Strong - 18px, Text Semibold */
+  .win-type-body-large-strong {
+    font-family: var(--font-variant-body-large-strong);
+    font-size: var(--font-size-body-large-strong);
+    line-height: var(--line-height-body-large-strong);
+    font-weight: var(--font-weight-body-large-strong);
+  }
+  
+  /* Subtitle - 20px, Display Semibold */
+  .win-type-subtitle {
+    font-family: var(--font-variant-subtitle);
+    font-size: var(--font-size-subtitle);
+    line-height: var(--line-height-subtitle);
+    font-weight: var(--font-weight-subtitle);
+  }
+  
+  /* Title - 28px, Display Semibold */
+  .win-type-title {
+    font-family: var(--font-variant-title);
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+    font-weight: var(--font-weight-title);
+  }
+  
+  /* Title Large - 40px, Display Semibold */
+  .win-type-title-large {
+    font-family: var(--font-variant-title-large);
+    font-size: var(--font-size-title-large);
+    line-height: var(--line-height-title-large);
+    font-weight: var(--font-weight-title-large);
+  }
+  
+  /* Display - 68px, Display Semibold */
+  .win-type-display {
+    font-family: var(--font-variant-display);
+    font-size: var(--font-size-display);
+    line-height: var(--line-height-display);
+    font-weight: var(--font-weight-display);
+  }
+}
