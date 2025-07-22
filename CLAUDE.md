@@ -65,34 +65,28 @@ Using flat config format with:
 ### Code Comments
 All files should contain a header comment starting with "ABOUTME:" for easy grepping and context understanding.
 
-### Git Workflow
-- Use descriptive commit messages
-- No Claude Code attribution in commits
-- Follow the git conventions outlined in the copilot instructions
+# MCP Servers
+## Figma Dev Mode MCP Rules
+- IMPORTANT: Always use components from `/src/components/ui` when possible
+- Prioritize Figma fidelity to match designs exactly
+- Avoid hardcoded values, use design tokens from Figma where available
+- Follow WCAG requirements for accessibility
+- Add component documentation
+- Place UI components in `/src/components`; avoid inline styles unless truly necessary
 
-### shadcn/ui Configuration
-- **Style**: new-york variant
-- **Base Color**: Neutral
-- **CSS Variables**: Enabled
-- **Aliases**: 
-  - `@/components` - Component directory
-  - `@/lib/utils` - Utility functions
-  - `@/components/ui` - UI components
-  - `@/hooks` - Custom React hooks
+  - The Figma Dev Mode MCP Server provides an assets endpoint which can serve image and SVG assets
+  - IMPORTANT: If the Figma Dev Mode MCP Server returns a localhost source for an image or an SVG, use that image or SVG source directly
+  - IMPORTANT: DO NOT import/add new icon packages, all the assets should be in the Figma payload
+  - IMPORTANT: do NOT use or create placeholders if a localhost source is provided
 
-### Future Implementation Needs
-This template requires implementation of:
-1. Create component directory structure for shadcn/ui components
-2. Integrate Fluent UI brand icons with shadcn components
-3. Windows 11 design tokens and theming adaptation
-4. Layout system following Windows design principles
-5. State management solution (if needed)
-6. Routing setup (if multi-page)
-7. Testing framework configuration
-8. Proper Prettier configuration
-
-## Important Notes
-- The project uses npm as the package manager
-- No testing framework is currently configured
-- The template is a blank canvas for Windows Design System implementation
-- Azure Artifacts authentication may be required for @minttec packages
+## Playwright MCP Rules
+  - The Playwright MCP Server provides a `playwright-mcp` server which can be used to check your implementation.
+  - IMPORTANT: Ask the user if the the server is running before using it
+  - IMPORTANT: Use the `playwright-mcp` server for all Playwright related tasks
+  - IMPORTANT: Do not use the `playwright` package directly, use the `playwright-mcp` server instead
+  
+  
+## Design System Guidelines
+- Use the `src/design-system` directory for design tokens and utilities
+- Use the `src/components/ui` directory for reusable UI components
+- Use the `src/components` directory for application-specific components

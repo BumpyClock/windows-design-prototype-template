@@ -84,12 +84,13 @@ export function ThemeDemo() {
               {/* Buttons */}
               <div className="space-y-spacing-2">
                 <Label>Buttons</Label>
-                <div className="flex gap-spacing-2">
+                <div className="flex gap-6">
                   <Button>Default</Button>
                   <Button variant="secondary">Secondary</Button>
                   <Button variant="outline">Outline</Button>
                   <Button variant="ghost">Ghost</Button>
                   <Button variant="destructive">Destructive</Button>
+                  <Button disabled>Disabled</Button>
                 </div>
               </div>
 
