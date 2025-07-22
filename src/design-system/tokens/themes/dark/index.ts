@@ -41,16 +41,16 @@ export const darkTheme: ThemeTokens = {
         inputActive: 'rgba(30, 30, 30, 0.7)',     // #1E1E1E 70%
       },
       accent: {
-        default: '#60CDFF',                       // Accent Blue
-        secondary: 'rgba(96, 205, 255, 0.9)',     // Accent Blue 90%
-        tertiary: 'rgba(96, 205, 255, 0.8)',      // Accent Blue 80%
+        default: '#60CDFF',                       // Accent Blue (matches Figma)
+        secondary: '#60CDFF',                     // Accent Blue (matches Figma)
+        tertiary: '#60CDFF',                      // Accent Blue (matches Figma)
         disabled: 'rgba(255, 255, 255, 0.158)',   // White 15.8%
       },
       system: {
         critical: '#FF99A4',                      // Light Red
         success: '#6CCB5F',                       // Light Green
-        attention: '#FCE100',                     // Yellow
-        caution: '#FFB900',                       // Orange
+        attention: '#60CDFF',                     // Accent Blue (matches Figma)
+        caution: '#FCE100',                       // Yellow (matches Figma)
       },
       solid: {
         background: '#202020',                    // Solid Background

@@ -28,7 +28,7 @@ export const lightTheme: ThemeTokens = {
       accentText: {
         primary: '#003E92', // Accent text primary
         secondary: '#001A68', // Accent text secondary
-        tertiary: '#005A9E', // Accent text tertiary
+        tertiary: '#005FB8', // Accent text tertiary (matches Figma)
         disabled: 'rgba(0, 0, 0, 0.3614)', // ~#0000005C
       },
       control: {
@@ -40,16 +40,16 @@ export const lightTheme: ThemeTokens = {
         inputActive: '#FFFFFF',
       },
       accent: {
-        default: '#005A9E', // Accent default
-        secondary: '#106EBE', // Accent secondary (hover)
-        tertiary: '#0078D4', // Accent tertiary (pressed)
+        default: '#005FB8', // Accent default (matches Figma)
+        secondary: '#005FB8', // Accent secondary (matches Figma)
+        tertiary: '#005FB8', // Accent tertiary (matches Figma)
         disabled: 'rgba(0, 0, 0, 0.2169)', // ~#00000037
       },
       system: {
         critical: '#C42B1C', // Error/Critical
         success: '#0F7B0F', // Success
-        attention: '#005A9E', // Information/Attention
-        caution: '#9A5B00', // Warning/Caution
+        attention: '#005FB7', // Information/Attention (matches Figma)
+        caution: '#9D5D00', // Warning/Caution (matches Figma)
       },
       solid: {
         background: '#F3F3F3', // Solid background
